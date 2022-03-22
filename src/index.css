@@ -1,8 +1,5 @@
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
+  
   background:   linear-gradient(to right, rgb(17, 133, 123), rgb(15, 109, 146), rgb(4, 25, 94));
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

@@ -6,7 +6,7 @@ const Scroll = (props) => {
     <div 
       style = {
         {overflowY: 'auto', 
-        height: '800px',
+        height: '450px',
         scrollBehavior: 'smooth',
         scrollbarColor: 'transparent transparent'
         }

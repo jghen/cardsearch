@@ -40,7 +40,7 @@ class App extends React.Component{
     <h1 className="tc f1">...Loading...</h1> :
     (
       <div className="tc" >
-        <h1 className="f2">CardSearch</h1>
+        <h1 className="f1">CardSearch</h1>
         <SearchBox searchChange = {this.onSearchChange}/>
         <Scroll>
           <ErrorBoundry>
