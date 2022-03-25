@@ -39,9 +39,11 @@ class App extends React.Component{
     return !robots.length ? 
     <h1 className="tc f1">...Loading...</h1> :
     (
-      <div className="tc" >
-        <h1 className="f1">CardSearch</h1>
-        <SearchBox searchChange = {this.onSearchChange}/>
+      <div >
+        <header className="shadow-5">
+          <h1 className="f1 shadow-5">CardSearch</h1>
+          <SearchBox searchChange = {this.onSearchChange}/>  
+        </header>
         <Scroll>
           <ErrorBoundry>
             <CardList robots = {filteredRobots}/>
