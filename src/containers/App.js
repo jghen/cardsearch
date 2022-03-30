@@ -16,10 +16,18 @@ class App extends React.Component{
     }
   }
 
+  fetchUsers = async () => {
+    const resp = await fetch('https://jsonplaceholder.typicode.com/users');
+    const users = await resp.json();
+    return this.setState({robots: users})
+  }
+
   componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/users')
+    /* fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
-      .then(users=>this.setState({robots: users}));
+      .then(users=>this.setState({robots: users})); */
+
+    this.fetchUsers();
   }
 
   onSearchChange = (event) => {
@@ -40,8 +48,8 @@ class App extends React.Component{
     <h1 className="tc f1">...Loading...</h1> :
     (
       <div >
-        <header className="shadow-5">
-          <h1 className="f1 shadow-5">CardSearch</h1>
+        <header>
+          <h1 className="f1">CardSearch</h1>
           <SearchBox searchChange = {this.onSearchChange}/>  
         </header>
         <Scroll>

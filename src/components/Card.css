@@ -1,5 +1,14 @@
+.card, .card-info {
+  background-color: rgb(15, 24, 105);
+  color: rgb(240, 240, 240);
+}
+
 .card {
   width: 240px;
   height: 300px;
+}
+.card-info {
+  border-top: 1px solid rgb(240, 240, 240);
+  margin: 2%;
 }
 
