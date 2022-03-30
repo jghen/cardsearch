@@ -1,16 +1,13 @@
-.card, .card-info {
-  /* background-color: rgb(3, 3, 3); */
-  color: rgb(252, 249, 249);
-  
-}
 
 .card {
   width: 240px;
   height: 300px;
-  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(3, 3, 3, 0.356);
+  
 }
 .card-info {
   border-top: 2px solid rgb(29, 241, 10);
+  color: rgb(252, 249, 249);
   margin: 2%;
 }
 img {
