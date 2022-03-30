@@ -47,7 +47,7 @@ class App extends React.Component{
     return !robots.length ? 
     <h1 className="tc f1">...Loading...</h1> :
     (
-      <div >
+      <div className="innerbody">
         <header>
           <h1 className="f1">CardSearch</h1>
           <SearchBox searchChange = {this.onSearchChange}/>  

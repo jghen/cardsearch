@@ -9,7 +9,8 @@ header {
 
 }
 h1 {
-  color: #fff;
+  color: rgb(29, 241, 10);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
+  text-shadow: 1px 1px rgb(41, 46, 40);
 }

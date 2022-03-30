@@ -1,10 +1,11 @@
 import React from "react";
+import './SearchBox.css'
 
 const SearchBox = ({searchChange}) => {
   return(
     <div>
       <input
-        className="w5 pa3 ba shadow-4" 
+        className="w5 pa3 ba  br2 shadow-1" 
         type="search" 
         placeholder="search name, alias or email"
         onChange={searchChange}
