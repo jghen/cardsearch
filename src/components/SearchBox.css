@@ -2,6 +2,6 @@ input {
   border: 1px solid black;
   background-color: transparent;
 }
-input:hover {
-  border: 1px solid rgb(21, 255, 0);
+input:focus {
+  border: 1px solid rgb(10, 10, 10);
 }

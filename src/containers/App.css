@@ -1,15 +1,13 @@
 header {
   height: 12rem;
   width: 100%;
-  z-index: 5;
   top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 h1 {
-  color: rgb(29, 241, 10);
+  color: rgba(5, 255, 5, 0.815);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
   text-shadow: 1px 1px rgb(41, 46, 40);
