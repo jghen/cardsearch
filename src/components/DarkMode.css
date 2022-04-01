@@ -1,0 +1,58 @@
+:root {
+  --text-color-h1: rgb(19, 226, 19);
+  --text-color-card: rgb(240, 240, 240);
+  --text-color-button: var(--text-color-card);
+  --bg-body: linear-gradient(
+    to bottom left, 
+    rgb(2, 2, 2), 
+    rgb(22, 22, 22),
+    rgb(33, 33, 34), 
+    rgb(13, 13, 14), 
+    rgb(2, 2, 2));
+  --bg-input: #333;
+  --bg-scroller: #333;
+  --bg-card: var(--bg-body);
+  --bg-button: var(-bg-input);
+  --bg-card-line: rgb(19, 226, 19);
+  --bg-button: rgb(154, 73, 230);
+  --bg-button-focus: rgb(170, 106, 230);
+  --bg-scrollbar-thumb: rgba(0, 0, 0, 0.5);
+}
+
+.light {
+  --text-color-h1: rgb(9, 10, 117);
+  --text-color-card: rgb(0, 0, 0);
+  --text-color-button: #fff;
+  --bg-body: linear-gradient(
+    to bottom left, 
+    rgb(180, 180, 180), 
+    rgb(209, 209, 209),
+    rgb(252, 252, 252), 
+    rgb(224, 224, 224), 
+    rgb(168, 168, 168));
+  --bg-input: rgb(253, 253, 253);
+  --bg-scroller: var(--bg-input);
+  --bg-card: var(--bg-body);
+  --bg-button: var(-bg-input);
+  --bg-card-line: var(--text-color-h1);
+  --bg-button: var(--text-color-h1);
+  --bg-scrollbar-thumb: rgba(9, 10, 117, 0.5);
+}
+
+
+button {
+  position: absolute;
+  padding: .5em;
+  border-radius: 25px;
+  background-color: var(--bg-button);
+  color: var(--text-color-button);
+  border-style: none;
+  bottom: 5%;
+}
+button:active {
+  border: 2px solid var(--bg-button-focus);
+  background: var(--bg-button-focus);
+  bottom: calc(5% - 2px);
+  
+}
+

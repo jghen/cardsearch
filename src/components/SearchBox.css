@@ -1,7 +1,9 @@
 input {
-  border: 1px solid black;
-  background-color: transparent;
+  
+  background: var(--bg-scroller);
+  outline: none;
+  
 }
 input:focus {
-  border: 1px solid rgb(10, 10, 10);
+  outline: 1px solid var(--text-color-h1);
 }

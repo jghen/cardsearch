@@ -4,7 +4,7 @@ import './Card.css';
 
 const Card = ({name, email, id, userName}) => {
   return(
-    <div className=' card tc br2 pa1 ma3 grow bw1 shadow-1'>
+    <div className=' card tc br2 grow shadow-1'>
       <img className='img' src={`https://robohash.org/robootz${id}?size=125x125`} alt="robot-face"/>
       <div className='card-info'>
         <h3>{name}</h3>
@@ -14,4 +14,4 @@ const Card = ({name, email, id, userName}) => {
     </div>
   );
 }
-export default Card
+export default Card;

@@ -2,6 +2,7 @@ import React from "react";
 import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
 import Scroll from '../components/Scroll';
+import DarkMode from '../components/DarkMode'; 
 import './App.css'
 import '../components/ErrorBoundry';
 import ErrorBoundry from "../components/ErrorBoundry";
@@ -48,8 +49,9 @@ class App extends React.Component{
     <h1 className="tc f1">...Loading...</h1> :
     (
       <div className="innerbody">
+      <DarkMode></DarkMode>
         <header>
-          <h1 className="f1">CardSearch</h1>
+          <h1 className="f1">{'CardSearch'}</h1>
           <SearchBox searchChange = {this.onSearchChange}/>  
         </header>
         <Scroll>
