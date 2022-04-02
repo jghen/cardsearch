@@ -7,5 +7,5 @@ input, .w5 {
   
 }
 input:focus {
-  outline: 1px solid var(--text-color-h1);
+  outline: 2px solid var(--text-color-h1);
 }
