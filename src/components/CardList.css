@@ -3,7 +3,7 @@
   display: grid;
   align-items: flex-start;
   gap: 2em;
-  margin: 10% calc(2% - 0.4em) 10% 2%;
+  margin: 2em calc(.5em - 0.4em) 2em .5em;
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minMax(250px,1fr));
   background: var(--bg-scroller);

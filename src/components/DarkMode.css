@@ -2,6 +2,7 @@
   --text-color-h1: rgb(19, 226, 19);
   --text-color-card: rgb(240, 240, 240);
   --text-color-button: var(--text-color-card);
+  --text-color-searchbox: var(--text-color-card);
   --bg-body: linear-gradient(
     to bottom left, 
     rgb(2, 2, 2), 
@@ -23,14 +24,15 @@
   --text-color-h1: rgb(9, 10, 117);
   --text-color-card: rgb(0, 0, 0);
   --text-color-button: #fff;
+  --text-color-searchbox: var(--text-color-card);
   --bg-body: linear-gradient(
     to bottom left, 
-    rgb(180, 180, 180), 
-    rgb(209, 209, 209),
-    rgb(252, 252, 252), 
-    rgb(224, 224, 224), 
-    rgb(168, 168, 168));
-  --bg-input: rgb(253, 253, 253);
+    rgb(230, 230, 230), 
+    rgb(235, 235, 235),
+    rgb(240, 240, 240), 
+    rgb(235, 235, 235), 
+    rgb(230, 230, 230));
+  --bg-input: #fff;
   --bg-scroller: var(--bg-input);
   --bg-card: var(--bg-body);
   --bg-button: var(-bg-input);

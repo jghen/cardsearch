@@ -3,11 +3,10 @@
   border-radius: 5px;
   background: var(--bg-scroller);
   width: 80%;
-  height: 55vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: .4em;
 }
 
 .Scroll::-webkit-scrollbar {

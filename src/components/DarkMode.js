@@ -14,7 +14,7 @@ const DarkMode = () => {
     className="button-dark" 
     onClick={toggleDarkMode}
   >
-    {'Toggle dark mode'}
+    {'Dark / light mode'}
   </button>
 /* </div> */
   );
