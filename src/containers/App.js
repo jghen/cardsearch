@@ -51,7 +51,7 @@ class App extends React.Component{
       <div className="innerbody">
       <DarkMode></DarkMode>
         <header>
-          <h1 className="f1">{'CardSearch'}</h1>
+          <h1 className="f1">{'BrukerSøk'}</h1>
           <SearchBox searchChange = {this.onSearchChange}/>  
         </header>
         <Scroll>

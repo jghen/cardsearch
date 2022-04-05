@@ -1,4 +1,4 @@
-:root {
+:root, .dark {
   --text-color-h1: rgb(19, 226, 19);
   --text-color-card: rgb(240, 240, 240);
   --text-color-button: var(--text-color-card);
@@ -27,34 +27,49 @@
   --text-color-searchbox: var(--text-color-card);
   --bg-body: linear-gradient(
     to bottom left, 
-    rgb(230, 230, 230), 
-    rgb(235, 235, 235),
-    rgb(240, 240, 240), 
-    rgb(235, 235, 235), 
-    rgb(230, 230, 230));
+    rgb(245, 245, 245), 
+    rgb(250, 250, 250),
+    rgb(255, 255, 255), 
+    rgb(250, 250, 250), 
+    rgb(245, 245, 245));
   --bg-input: #fff;
-  --bg-scroller: var(--bg-input);
+  --bg-scroller: rgb(192, 212, 243);
   --bg-card: var(--bg-body);
   --bg-button: var(-bg-input);
   --bg-card-line: var(--text-color-h1);
   --bg-button: var(--text-color-h1);
+  --bg-button-focus: rgb(78, 79, 173);
   --bg-scrollbar-thumb: rgba(9, 10, 117, 0.5);
 }
-
 
 button {
   position: absolute;
   padding: .5em;
-  border-radius: 25px;
+  border-radius: 3px;
   background-color: var(--bg-button);
   color: var(--text-color-button);
   border-style: none;
-  bottom: 5%;
+  bottom: 1em;
 }
 button:active {
   border: 2px solid var(--bg-button-focus);
   background: var(--bg-button-focus);
-  bottom: calc(5% - 2px);
+  bottom: calc(1em - 2px);
   
+}
+/* med queries - move button on desktop devices to top right */
+@media only screen and (min-width: 540px) {
+  button {
+    bottom: auto;
+    right: .5em;
+    top: .5em;
+    border-radius: 5px;
+  }
+  button:active {
+    bottom: auto;
+    top: calc(.5em - 2px);
+    right: calc(.5em - 2px);
+    
+  }
 }
 

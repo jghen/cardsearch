@@ -6,7 +6,7 @@
 }
 
 header {
-  height: 10rem;
+  height: 9.2rem;
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@ h1, .f1 {
   color: var(--text-color-h1);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
-  margin: .4em;
+  margin: .3em;
   padding: 0;
   
 }

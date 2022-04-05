@@ -2,8 +2,8 @@
   -ms-overflow-style: none;
   border-radius: 5px;
   background: var(--bg-scroller);
-  width: 80%;
-  height: 60vh;
+  width: 100%;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,4 +16,10 @@
 .Scroll::-webkit-scrollbar-thumb {
   background-color: var(--bg-scrollbar-thumb);
   border-radius: 10%;                  
+}
+
+@media only screen and (min-width: 540px) {
+  .Scroll {
+    width: 85%;
+  }
 }

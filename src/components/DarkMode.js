@@ -1,9 +1,27 @@
 import React from "react";
 import './DarkMode.css';
 
+// dark class initial toggle: 
+//if not function toggleDarkMode won't work
+{document.querySelector('body').classList.toggle('dark'); }
+
 const toggleDarkMode = () => {
   const body = document.querySelector('body');
-  return body.classList.toggle('light')
+  const btn = document.querySelector('.button-dark');
+
+  if (body.classList.value === "dark") {
+    btn.textContent = 'Dark mode';
+    body.classList.toggle('light');
+    body.classList.toggle('dark');
+    return;
+  }
+
+  if (body.classList.value === "light") {
+    btn.textContent = 'Light mode';
+    body.classList.toggle('light');
+    body.classList.toggle('dark');
+    return;
+  }
 }
 
 const DarkMode = () => {
@@ -13,8 +31,7 @@ const DarkMode = () => {
   <button 
     className="button-dark" 
     onClick={toggleDarkMode}
-  >
-    {'Dark / light mode'}
+  > {'Light mode'}
   </button>
 /* </div> */
   );

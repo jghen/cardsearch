@@ -1,9 +1,10 @@
-input, .w5 {
+input, .ba {
   margin: 0;
-  background: var(--bg-scroller);
+  background: var(--bg-input);
   color: var(--text-color-searchbox);
   outline: none;
-  height: 3em;
+  height: 2.8em;
+  width: 240px;
   
 }
 input:focus {
