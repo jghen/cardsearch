@@ -12,7 +12,7 @@ class App extends React.Component{
   constructor() {
     super();
     this.state = {
-      robots: [],
+      users: [],
       searchfield: '',
     }
   }
@@ -20,13 +20,13 @@ class App extends React.Component{
   fetchUsers = async () => {
     const resp = await fetch('https://jsonplaceholder.typicode.com/users');
     const users = await resp.json();
-    return this.setState({robots: users})
+    return this.setState({users: users})
   }
 
   componentDidMount() {
     /* fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
-      .then(users=>this.setState({robots: users})); */
+      .then(users=>this.setState({users: users})); */
 
     this.fetchUsers();
   }
@@ -36,16 +36,16 @@ class App extends React.Component{
   }
 
   render(){
-    const {robots, searchfield} = this.state;
+    const {users, searchfield} = this.state;
 
-    const filteredRobots = robots.filter( robot =>{ 
-      let nameMatch = robot.name.toLowerCase().includes(searchfield.toLowerCase());
-      let emailMatch = robot.email.toLowerCase().includes(searchfield.toLowerCase());
-      let userNameMatch = robot.username.toLowerCase().includes(searchfield.toLowerCase());
+    const filteredUsers = users.filter( user =>{ 
+      let nameMatch = user.name.toLowerCase().includes(searchfield.toLowerCase());
+      let emailMatch = user.email.toLowerCase().includes(searchfield.toLowerCase());
+      let userNameMatch = user.username.toLowerCase().includes(searchfield.toLowerCase());
       return  nameMatch + emailMatch + userNameMatch;
     })
 
-    return !robots.length ? 
+    return !users.length ? 
     <h1 className="tc f1">...Loading...</h1> :
     (
       <div className="innerbody">
@@ -56,7 +56,7 @@ class App extends React.Component{
         </header>
         <Scroll>
           <ErrorBoundry>
-            <CardList robots = {filteredRobots}/>
+            <CardList users = {filteredUsers}/>
           </ErrorBoundry>
         </Scroll>
       </div>

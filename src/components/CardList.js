@@ -2,19 +2,19 @@ import React from "react";
 import Card from "./Card";
 import './CardList.css';
 
-const CardList = ({robots}) => {
+const CardList = ({users}) => {
   
   return (
     <div className="card-wrapper">
       {
-        robots.map((user,i)=> {
+        users.map((user,i)=> {
           return (
             <Card 
               key={i} 
-              id = {robots[i].id} 
-              name = {robots[i].name} 
-              email = {robots[i].email}
-              userName = {robots[i].username}
+              id = {users[i].id} 
+              name = {users[i].name} 
+              email = {users[i].email}
+              userName = {users[i].username}
             />
           )
         })
